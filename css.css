@@ -1,0 +1,25 @@
+.krisie-1 {
+    line-height: 1.2em;
+    color: #0000;
+    text-shadow:
+        0 0 #000
+        0 1.2em #ffb6c1
+overflow: hidden;
+transition: .5s;        
+}
+.krisie-1:hover {
+    text-shadow:
+        0 --1.2em #000,
+        0 0 #ffb6c1
+}
+
+body {
+    height: 100vh
+    margin: 0;
+    display: grid
+    place-content: centre;
+}
+
+h3 {
+    font-family: 
+}
