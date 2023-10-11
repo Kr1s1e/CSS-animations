@@ -34,11 +34,16 @@
     color: #0000;
     text-shadow:
         0 var(--t,var(--h)) #ffffff,
-        0 0 var(--c, #000); 
+        0 0 var(--c, #000);
+    background:
+        linear-gradient(#ffb6c1 0 0)
+        bottom/100% var(--d, 0) no-repeat;
+    overflow: hidden;
     transition: 0.3s;
 }
 
 .krisie-2:hover {
+    --d: 100%;
     --t: 0;
     --c: #0000;
 }
