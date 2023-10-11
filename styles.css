@@ -1,5 +1,11 @@
+
+/*--animations--*/
+
+
+/*animation no.1*/
+
 .krisie-1 {
-    --h: 1.2em;
+    --h: 1.2em; /*height*/
 
     line-height: var(--h);
     color: #0000;
@@ -19,6 +25,24 @@
 .krisie-1:hover {
     --t: var(--h);
 }
+
+/*animation no.2*/
+.krisie-2 {
+    /*height variable*/ --h:1.2em;
+
+    line-height: var(--h);
+    color: #0000;
+    text-shadow:
+        0 var(--t,var(--h)) #ffffff,
+        0 0 var(--c, #000); 
+    transition: 0.3s;
+}
+
+.krisie-2:hover {
+    --t: 0;
+    --c: #0000;
+}
+/*stylistic features*/
 
 body {
     height: 100vh;
