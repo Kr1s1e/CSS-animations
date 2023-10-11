@@ -4,14 +4,22 @@
     text-shadow:
         0 0 #000000,
         0 1.2em #ffb6c1;
+
+    text-shadow: 
+        0 calc(-1*var(--t,0em)) #0000
+        0 calc(var(--h) - var(--t,0em)) #ffb6c1
     overflow: hidden;
     transition: .5s;        
 }
 
-.krisie-1:hover {
+.alt {
     text-shadow:
-        0 -1.2em #000000,
-        0 0 #ffb6c1
+    0 var(--t,0em) #0000,
+    0 calc(var(--t,0em) - var(--h)) #ffb6c1;
+}
+
+.krisie-1:hover {
+    --t: var(--h);
 }
 
  h3 {
