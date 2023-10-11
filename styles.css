@@ -1,21 +1,19 @@
 .krisie-1 {
-    line-height: 1.2em;
-    color: #0000;
-    text-shadow:
-        0 0 #000000,
-        0 1.2em #ffb6c1;
+    --h: 1.2em;
 
+    line-height: var(--h);
+    color: #0000;
     text-shadow: 
-        0 calc(-1*var(--t,0em)) #0000
-        0 calc(var(--h) - var(--t,0em)) #ffb6c1
+        0 calc(-1*var(--t,0em)) #000000,
+        0 calc(var(--h) - var(--t,0em)) #ffb6c1;
     overflow: hidden;
-    transition: .5s;        
+    transition: .3s;        
 }
 
 .alt {
     text-shadow:
-    0 var(--t,0em) #0000,
-    0 calc(var(--t,0em) - var(--h)) #ffb6c1;
+        0 var(--t,0em) #000000,
+        0 calc(var(--t,0em) - var(--h)) #ffb6c1;
 }
 
 .krisie-1:hover {
@@ -24,4 +22,5 @@
 
  h3 {
     font-size: 4rem;
+    font-family: system-ui, sans-serif;
  }
