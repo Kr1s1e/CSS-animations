@@ -71,6 +71,23 @@
     --s: .3s
 }
 
+/*animation no.4*/
+.krisie-4 {
+    --h: 1.2em;
+    --c: #ffb6c1;
+
+    line-height: var(--h);
+    color: #000000;
+    text-shadow: 
+        0 var(--h) #ff0000,
+        0 0 #000;
+    clip-path: inset(0 0 1px 0);
+    transition: 0.4s;
+}
+
+.krisie-4:hover {
+    clip-path: inset(0 0 calc(-1*var(--h)) 0);
+}
 
 /*stylistic features*/
 
