@@ -62,13 +62,13 @@
     background:
         linear-gradient(var(--c) 0 0) no-repeat
         calc(200% -  var(--p, 0%)) 100%/200% var(--p, .08em);
-        transition: .3s var(--s,0s), background-position .3s calc(.3s - var(--s,0s));
+        transition: .2s var(--s,0s), background-position .2s calc(.2s - var(--s,0s));
 }
 
 .krisie-3:hover {
     --t: var(--h);
     --p: 100%;
-    --s: .3s
+    --s: .2s
 }
 
 /*animation no.4*/
@@ -85,14 +85,14 @@
     box-shadow: 0 var(--t, var(--h)) var(--c1);
     clip-path: inset(0 0 1px 0);
     background: linear-gradient(var(--c1) 0 0) 0 var(--t, var(--h)) no-repeat;
-    transition: 0.4s, clip-path 0.4s 0.4s;
+    transition: 0.3s, clip-path 0.3s 0.3s;
 }
 
 .krisie-4:hover {
     --t: 0;
     --c: #ffb6c1;
     clip-path: inset(0 0 calc(-1*var(--h)) 0);
-    transition: 0.4s 0.4s, clip-path 0.4s;
+    transition: 0.3s 0.3s, clip-path 0.3s;
 }
 
 /*stylistic features*/
