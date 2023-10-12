@@ -28,7 +28,7 @@
 
 /*animation no.2*/
 .krisie-2 {
-    /*height variable*/ --h:1.2em;
+     --h:1.2em; /*height variable*/
 
     line-height: var(--h);
     color: #0000;
@@ -47,6 +47,30 @@
     --t: 0;
     --c: #0000;
 }
+
+/*animation no.3*/
+.krisie-3 {
+    --c: #ffb6c1; /*colour*/
+    --h: 1.2em /*height*/
+
+    line-height: var(--h);
+    color: #0000;
+    text-shadow: 
+        0 calc(-1*var(--t,0em)) #000000,
+        0 calc(var(--h) - var(--t,0em)) #ffb6c1;
+    background:
+        linear-gradient(var(--c) 0 0) no-repeat
+        calc(200% - var(--p, 0%)) 100% / 200% var(--p, .08em);
+        transition: .3s var(--s, 0es), background-position .3s calc(.3s - var(--s,0s));
+}
+
+.krisie-3:hover {
+    --t: var(--h);
+    --p: 100%;
+    --s: .3s
+}
+
+
 /*stylistic features*/
 
 body {
