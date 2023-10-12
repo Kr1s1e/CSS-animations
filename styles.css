@@ -74,19 +74,25 @@
 /*animation no.4*/
 .krisie-4 {
     --h: 1.2em;
-    --c: #ffb6c1;
+    --c: #000000;
+    --c1: #ffb6c1;
 
     line-height: var(--h);
-    color: #000000;
+    color: #0000;
     text-shadow: 
-        0 var(--h) #ff0000,
-        0 0 #000;
+        0 var(--t, var(--h)) #ffffff,
+        0 0 var(--c,#0000);
+    box-shadow: 0 var(--t, var(--h)) var(--c1);
     clip-path: inset(0 0 1px 0);
-    transition: 0.4s;
+    background: linear-gradient(var(--c1) 0 0) 0 var(--t, var(--h)) no-repeat;
+    transition: 0.4s, clip-path 0.4s 0.4s;
 }
 
 .krisie-4:hover {
+    --t: 0;
+    --c: #ffb6c1;
     clip-path: inset(0 0 calc(-1*var(--h)) 0);
+    transition: 0.4s 0.4s, clip-path 0.4s;
 }
 
 /*stylistic features*/
