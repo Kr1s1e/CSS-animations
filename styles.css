@@ -51,17 +51,18 @@
 /*animation no.3*/
 .krisie-3 {
     --c: #ffb6c1; /*colour*/
-    --h: 1.2em /*height*/
+    --h: 1.2em; /*height*/
 
     line-height: var(--h);
-    color: #0000;
-    text-shadow: 
-        0 calc(-1*var(--t,0em)) #000000,
-        0 calc(var(--h) - var(--t,0em)) #ffb6c1;
+    color: #00000000;
+    overflow: hidden;
+    text-shadow:
+        0 calc(-1*var(--t,0em)) var(--c),
+        0 calc(var(--h) - var(--t, 0em)) #fff;
     background:
         linear-gradient(var(--c) 0 0) no-repeat
-        calc(200% - var(--p, 0%)) 100% / 200% var(--p, .08em);
-        transition: .3s var(--s, 0es), background-position .3s calc(.3s - var(--s,0s));
+        calc(200% -  var(--p, 0%)) 100%/200% var(--p, .08em);
+        transition: .3s var(--s,0s), background-position .3s calc(.3s - var(--s,0s));
 }
 
 .krisie-3:hover {
@@ -77,7 +78,7 @@ body {
     height: 100vh;
     margin: 0%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: subgrid;
     gap: 20px;
     place-content: center;
     align-items: center;
